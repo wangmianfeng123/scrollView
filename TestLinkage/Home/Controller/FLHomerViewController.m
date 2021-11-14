@@ -25,6 +25,7 @@
     // Do any additional setup after loading the view.
     self.view = [[FLLinkageView alloc] init];
     NSLog(@"666666");
+    NSLog(@"111111");
 }
 
 
