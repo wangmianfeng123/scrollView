@@ -8,11 +8,17 @@
 
 #import "FLHomerViewController.h"
 #import "FLLinkageView.h"
+
+
 @interface FLHomerViewController ()
+
 
 @end
 
+
 @implementation FLHomerViewController
+
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -20,6 +26,8 @@
     self.view = [[FLLinkageView alloc] init];
     NSLog(@"666666");
 }
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

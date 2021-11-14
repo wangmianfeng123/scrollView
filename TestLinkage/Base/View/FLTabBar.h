@@ -6,10 +6,21 @@
 //  Copyright © 2018年 qingtiantree. All rights reserved.
 //
 
+
+
 #import <UIKit/UIKit.h>
 
+
+
+
 @interface FLTabBar : UITabBar
+
+
+
+
 @property (nonatomic,copy) void(^didMiddBtn)();
+
+
 
 - (instancetype) initWithButtonCount:(NSInteger) count;
 
