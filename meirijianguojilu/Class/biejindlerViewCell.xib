@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="YDCollectionViewCellId" id="gTV-IL-0wX" customClass="biejindlerViewCell" customModule="meirijianguojilu" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="76" height="128"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="76" height="128"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jGn-X4-N96">
+                        <rect key="frame" x="21.5" y="107" width="33" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NhR-en-JV1">
+                        <rect key="frame" x="5" y="5" width="66" height="97"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shuoyibandehua" translatesAutoresizingMaskIntoConstraints="NO" id="sxh-zQ-E7k">
+                        <rect key="frame" x="-26" y="-10.5" width="128" height="128"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SKK-Zr-Ljn">
+                        <rect key="frame" x="5" y="5" width="66" height="118"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="bottomRight" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="日记本11" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8w6-fn-qsD">
+                        <rect key="frame" x="5" y="5" width="10" height="48"/>
+                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="10" id="3fO-MN-beC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="SKK-Zr-Ljn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="120-SS-AxO"/>
+                <constraint firstAttribute="trailing" secondItem="SKK-Zr-Ljn" secondAttribute="trailing" constant="5" id="3n7-j3-1MF"/>
+                <constraint firstAttribute="bottom" secondItem="SKK-Zr-Ljn" secondAttribute="bottom" constant="5" id="5bP-vk-dRK"/>
+                <constraint firstItem="NhR-en-JV1" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="68P-76-QiC"/>
+                <constraint firstAttribute="bottom" secondItem="jGn-X4-N96" secondAttribute="bottom" constant="5" id="7nd-Uh-M11"/>
+                <constraint firstItem="8w6-fn-qsD" firstAttribute="top" secondItem="NhR-en-JV1" secondAttribute="top" id="93b-Tw-LT8"/>
+                <constraint firstItem="sxh-zQ-E7k" firstAttribute="centerX" secondItem="NhR-en-JV1" secondAttribute="centerX" id="NEH-E0-fnl"/>
+                <constraint firstItem="NhR-en-JV1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="O8Q-dG-o9p"/>
+                <constraint firstItem="8w6-fn-qsD" firstAttribute="leading" secondItem="NhR-en-JV1" secondAttribute="leading" id="UgE-Y9-mg4"/>
+                <constraint firstItem="jGn-X4-N96" firstAttribute="top" secondItem="NhR-en-JV1" secondAttribute="bottom" constant="5" id="afK-l8-Nwj"/>
+                <constraint firstItem="SKK-Zr-Ljn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="bP0-nc-MfL"/>
+                <constraint firstAttribute="trailing" secondItem="NhR-en-JV1" secondAttribute="trailing" constant="5" id="fLh-uf-iR6"/>
+                <constraint firstItem="sxh-zQ-E7k" firstAttribute="centerY" secondItem="NhR-en-JV1" secondAttribute="centerY" id="stC-mh-ZUy"/>
+                <constraint firstItem="jGn-X4-N96" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="ugW-SN-Heq"/>
+            </constraints>
+            <size key="customSize" width="76" height="128"/>
+            <connections>
+                <outlet property="addImage" destination="sxh-zQ-E7k" id="XnC-vI-s4Z"/>
+                <outlet property="biaoqianLabel" destination="8w6-fn-qsD" id="8ve-7k-s7L"/>
+                <outlet property="jacinthLabel" destination="jGn-X4-N96" id="tRV-g8-zPz"/>
+                <outlet property="labellumImage" destination="SKK-Zr-Ljn" id="vrf-O5-PVg"/>
+                <outlet property="rpcImage" destination="NhR-en-JV1" id="YfQ-Xh-mS3"/>
+            </connections>
+            <point key="canvasLocation" x="148.80000000000001" y="86.35682158920541"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="shuoyibandehua" width="128" height="128"/>
+    </resources>
+</document>
