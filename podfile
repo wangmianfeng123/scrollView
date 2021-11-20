@@ -1,0 +1,11 @@
+target 'shijianfenmiaozhong' do
+    pod 'QMUIKit'
+    pod 'FlatUIKit'
+    pod 'IQKeyboardManager'
+    pod 'UITableView+FDTemplateLayoutCell'
+ 
+    pod 'MGSwipeTableCell'
+    pod 'pop'
+    pod 'DCAnimationKit'  
+   
+end
