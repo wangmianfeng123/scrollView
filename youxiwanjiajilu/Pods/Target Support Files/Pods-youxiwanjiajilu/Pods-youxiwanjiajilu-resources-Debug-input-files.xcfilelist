@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-youxiwanjiajilu/Pods-youxiwanjiajilu-resources.sh
+${PODS_ROOT}/PYSearch/PYSearch/PYSearch.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/QMUIKit/QMUIResources.bundle
+${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle
+${PODS_ROOT}/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle

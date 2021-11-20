@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="xianyumaihuoViewController">
+            <connections>
+                <outlet property="personTableview" destination="DcJ-t3-tP3" id="vLj-6p-YLo"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DcJ-t3-tP3">
+                    <rect key="frame" x="0.0" y="64" width="414" height="713"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="DOd-Z2-H5n"/>
+                        <outlet property="delegate" destination="-1" id="9z6-aL-iPK"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UNC-fl-tQ6">
+                    <rect key="frame" x="20" y="797" width="374" height="45"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="3Hn-hS-iTH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="Confirm">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="conforma_pend:" destination="-1" eventType="touchUpInside" id="S2T-wY-4uW"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="DcJ-t3-tP3" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="MqF-L8-Tso"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="UNC-fl-tQ6" secondAttribute="trailing" constant="20" id="S0G-lR-Kh8"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="DcJ-t3-tP3" secondAttribute="trailing" id="YYy-O8-Znh"/>
+                <constraint firstItem="UNC-fl-tQ6" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="buC-kh-ods"/>
+                <constraint firstItem="DcJ-t3-tP3" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="20" id="gnu-R6-bec"/>
+                <constraint firstItem="UNC-fl-tQ6" firstAttribute="top" secondItem="DcJ-t3-tP3" secondAttribute="bottom" constant="20" id="mlA-GW-Ngz"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="UNC-fl-tQ6" secondAttribute="bottom" constant="20" id="scv-UP-Bor"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="64"/>
+        </view>
+    </objects>
+</document>

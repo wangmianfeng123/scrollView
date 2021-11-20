@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="yanzhizaixianCell" rowHeight="119" id="jtb-VP-GVZ" customClass="yanzhizaixianCell">
+            <rect key="frame" x="0.0" y="0.0" width="455" height="119"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jtb-VP-GVZ" id="907-yc-aMJ">
+                <rect key="frame" x="0.0" y="0.0" width="455" height="119"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="svg" translatesAutoresizingMaskIntoConstraints="NO" id="bP4-Me-WYn">
+                        <rect key="frame" x="20" y="24.5" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="c66-Uh-bo6"/>
+                            <constraint firstAttribute="width" constant="70" id="oau-Eh-bKB"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kkz-Es-RAk" customClass="QMUIButton">
+                        <rect key="frame" x="385" y="0.0" width="50" height="119"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="oof-lV-7Io"/>
+                        </constraints>
+                        <state key="normal" image="money"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:TexasPoker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MVP-d5-d9Z">
+                        <rect key="frame" x="115" y="24.5" width="147" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total :1000000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mD8-2i-Vi1">
+                        <rect key="frame" x="115" y="55.5" width="250" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bet:100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="67e-dj-sFi">
+                        <rect key="frame" x="115" y="84.5" width="64" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="kkz-Es-RAk" secondAttribute="trailing" constant="20" id="4D9-uP-6rh"/>
+                    <constraint firstItem="67e-dj-sFi" firstAttribute="top" secondItem="mD8-2i-Vi1" secondAttribute="bottom" constant="8" id="6qt-5B-T5e"/>
+                    <constraint firstItem="MVP-d5-d9Z" firstAttribute="top" secondItem="bP4-Me-WYn" secondAttribute="top" id="FQk-aW-2fh"/>
+                    <constraint firstItem="mD8-2i-Vi1" firstAttribute="top" secondItem="MVP-d5-d9Z" secondAttribute="bottom" constant="10" id="Fpw-7J-tfB"/>
+                    <constraint firstItem="bP4-Me-WYn" firstAttribute="centerY" secondItem="907-yc-aMJ" secondAttribute="centerY" id="MvZ-qp-iHt"/>
+                    <constraint firstItem="67e-dj-sFi" firstAttribute="leading" secondItem="mD8-2i-Vi1" secondAttribute="leading" id="NWb-zx-DdB"/>
+                    <constraint firstItem="kkz-Es-RAk" firstAttribute="leading" secondItem="mD8-2i-Vi1" secondAttribute="trailing" constant="20" id="UA1-BE-rEc"/>
+                    <constraint firstItem="bP4-Me-WYn" firstAttribute="leading" secondItem="907-yc-aMJ" secondAttribute="leading" constant="20" id="dcH-ct-0oI"/>
+                    <constraint firstAttribute="bottom" secondItem="kkz-Es-RAk" secondAttribute="bottom" id="iDX-lp-OQF"/>
+                    <constraint firstItem="MVP-d5-d9Z" firstAttribute="leading" secondItem="bP4-Me-WYn" secondAttribute="trailing" constant="25" id="jKC-Vc-WGp"/>
+                    <constraint firstItem="mD8-2i-Vi1" firstAttribute="leading" secondItem="bP4-Me-WYn" secondAttribute="trailing" constant="25" id="kOF-rD-wD2"/>
+                    <constraint firstItem="kkz-Es-RAk" firstAttribute="top" secondItem="907-yc-aMJ" secondAttribute="top" id="rOE-bg-hSi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aAF-LC-nSM"/>
+            <connections>
+                <outlet property="bet_amount" destination="67e-dj-sFi" id="xZ3-hF-ju9"/>
+                <outlet property="poker_bet" destination="kkz-Es-RAk" id="QP0-ee-JI8"/>
+                <outlet property="poker_name" destination="MVP-d5-d9Z" id="am5-8n-3Bv"/>
+                <outlet property="poker_photo" destination="bP4-Me-WYn" id="gDn-so-jUQ"/>
+                <outlet property="poker_score" destination="mD8-2i-Vi1" id="otw-7U-w8C"/>
+            </connections>
+            <point key="canvasLocation" x="235.50724637681162" y="143.63839285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="money" width="50" height="50"/>
+        <image name="svg" width="150" height="150"/>
+    </resources>
+</document>
