@@ -21,6 +21,7 @@
 {
     //Add a custom read-only cache path
     NSLog(@"666666");
+    
     NSString *bundledPath = [[NSBundle mainBundle].resourcePath stringByAppendingPathComponent:@"CustomPathImages"];
     [SDImageCache sharedImageCache].additionalCachePathBlock = ^NSString * _Nullable(NSString * _Nonnull key) {
         NSString *fileName = [[SDImageCache sharedImageCache] cachePathForKey:key].lastPathComponent;
